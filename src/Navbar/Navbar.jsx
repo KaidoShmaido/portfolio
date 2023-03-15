@@ -1,53 +1,35 @@
 import React from 'react'
 import "./Navbar.css"
+import logo from "../assets/react.svg"
 const Navbar = () => {
   return (
-    <header className='header' id='header'>
-        <div className="nav container">
+    <div>
 
-            <a href="#" className='nav__logo'>ANOUAR</a>
-            
-            <ul className='nav__menu' id='nav-menu'>
-                <ul className='nav__list grid'>
-                    <li className='nav__item'>
-                        <a href="#home" className='nav__link'>
-
-                            Home
-                        </a>
-                    </li>
-
-                    <li className='nav__item'>
-                        <a href="#about" className='nav__link'>
-                            
-                            About
-                        </a>
-                    </li>
-
-                    <li className='nav__item'>
-                        <a href="#skills" className='nav__link'>
-                            
-                            Skills
-                        </a>
-                    </li>
-
-                    <li className='nav__item'>
-                        <a href="#portfolio" className='nav__link'>
-                            
-                            Portfolio
-                        </a>
-                    </li>
-
-                    <li className='nav__item'>
-                        <a href="#contact" className='nav__link'>
-                            
-                            Contact Me
-                        </a>
-                    </li>
-                </ul>
-
-            </ul>
-        </div>
-    </header>
+        <nav className="navbar">
+            <a href="" className="logo">Anouar Maarouf</a>
+                <div className="nav__links">
+                    <ul>
+                        <li> <a href="">
+                                 <i class="uil uil-estate"></i>Home
+                            </a>
+                        </li>
+                        <li> <a href="">
+                                 <i class="uil uil-user"></i>User
+                            </a>
+                        </li>  <li> <a href="">
+                                 <i class="uil uil-file-alt"></i>Skills
+                            </a>
+                        </li>  <li> <a href="">
+                                 <i class="uil uil-briefcase-alt"></i>Portfolio
+                            </a>
+                        </li>  <li> <a href="">
+                                 <i class="uil uil-message"></i>Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </div>
   )
 }
 
